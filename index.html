@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS UniPalette</title>
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <link rel="icon" type="image/svg+xml" href="assets/CSS-UniPalette-Logo.svg">
 
   <style id="app-styles">
     html {
@@ -233,6 +234,12 @@
       font-size: 16px;
       font-weight: 700;
       margin: 0;
+    }
+
+    .dialog-title-with-logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }
 
     .close-btn {
@@ -548,7 +555,10 @@
 
   <dialog closedby="any" class="dialog" id="about-dialog">
     <div class="dialog-header">
-      <h2>CSS UniPalette</h2>
+      <h2 class="dialog-title dialog-title-with-logo">
+        <img src="assets/CSS-UniPalette-Logo.svg" alt="CSS UniPalette Logo" height="16" width="16">
+        <span>CSS UniPalette</span>
+      </h2>
       <button class="close-btn" onclick="closeAboutDialog()">&times;</button>
     </div>
     <div class="dialog-content">

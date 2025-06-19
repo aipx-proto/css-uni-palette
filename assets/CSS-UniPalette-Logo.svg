@@ -1,0 +1,25 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_4_77)">
+<rect width="8" height="8" fill="#DEDEDE"/>
+<rect width="8" height="8" transform="translate(8)" fill="#9F9F9F"/>
+<rect width="8" height="8" transform="translate(16)" fill="#636363"/>
+<rect width="8" height="8" transform="translate(24)" fill="#2F2F2F"/>
+<rect width="8" height="8" transform="translate(0 8)" fill="#FFBDAC"/>
+<rect width="8" height="8" transform="translate(8 8)" fill="#FC6957"/>
+<rect width="8" height="8" transform="translate(16 8)" fill="#C90000"/>
+<rect width="8" height="8" transform="translate(24 8)" fill="#720000"/>
+<rect width="8" height="8" transform="translate(0 16)" fill="#9DF994"/>
+<rect width="8" height="8" transform="translate(8 16)" fill="#36BF2E"/>
+<rect width="8" height="8" transform="translate(16 16)" fill="#008300"/>
+<rect width="8" height="8" transform="translate(24 16)" fill="#004400"/>
+<rect width="8" height="8" transform="translate(0 24)" fill="#A0D8FF"/>
+<rect width="8" height="8" transform="translate(8 24)" fill="#508FFF"/>
+<rect width="8" height="8" transform="translate(16 24)" fill="#022DFF"/>
+<rect width="8" height="8" transform="translate(24 24)" fill="#0500A7"/>
+</g>
+<defs>
+<clipPath id="clip0_4_77">
+<rect width="32" height="32" rx="2" fill="white"/>
+</clipPath>
+</defs>
+</svg>
