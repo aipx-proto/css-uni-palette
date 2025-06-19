@@ -11,7 +11,7 @@
     html {
       --app-background-color: hsl(0, 0%, 2%);
       --app-background-color-input: hsl(0, 0%, 0%);
-      --app-text-color: #eee;
+      --app-text-color: #d3d3d3;
       color: var(--app-text-color);
       background-color: var(--app-background-color);
       color-scheme: dark;
@@ -76,6 +76,10 @@
       font-size: 16px;
       font-weight: 700;
       margin: 0;
+    }
+
+    .github-link {
+      opacity: 0.6;
     }
 
     .export-btn {
@@ -433,12 +437,13 @@
       overflow-x: auto;
     }
 
-    .about-content a {
+    a {
       color: oklch(from currentColor l 0 0 / 0.9);
       text-decoration: underline;
+      font-weight: 600;
     }
 
-    .about-content a:hover {
+    a:hover {
       color: oklch(from currentColor l 0 0);
     }
 
@@ -511,7 +516,10 @@
           target="_blank">perceptually uniform color palettes</a> using <a
           href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch" target="_blank">oklch</a> and <a
           href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/relative" target="_blank">css relative
-          color syntax</a>.
+          color syntax</a>
+        <span class="github-link">
+          | <a href="https://github.com/aipx-proto/css-uni-palette" target="_blank">GitHub</a>
+        </span>
       </span>
     </div>
     <div class="title-section">
@@ -539,7 +547,8 @@
   </div>
 
   <dialog closedby="any" class="dialog" id="about-dialog">
-    <div class="dialog-header"><h2>CSS UniPalette</h2>
+    <div class="dialog-header">
+      <h2>CSS UniPalette</h2>
       <button class="close-btn" onclick="closeAboutDialog()">&times;</button>
     </div>
     <div class="dialog-content">
@@ -868,17 +877,16 @@
       },
       "machine": {
         "shades": {
-          1000: "100%",
-          800: "80%",
-          600: "60%",
-          400: "40%",
-          200: "20%",
-          0: "0%"
+          80: "80%",
+          60: "60%",
+          40: "40%",
+          20: "20%",
         },
         "colors": {
-          red: "red",
-          green: "green",
-          blue: "blue"
+          red: "#FF0000",
+          green: "#00FF00",
+          blue: "#0000FF",
+          // gray: "#808080"
         },
         "grays": {},
         "hue-torsion": 0,
