@@ -504,8 +504,15 @@
 
 <body>
   <div class="title-bar">
-    <div class="title-section">
+    <div class="site-title">
       <h1 class="title">CSS UniPalette</h1>
+      <span class="tagline">
+        Create <a href="https://programmingdesignsystems.com/color/perceptually-uniform-color-spaces/"
+          target="_blank">perceptually uniform color palettes</a> using <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch" target="_blank">oklch</a> and <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/relative" target="_blank">css relative
+          color syntax</a>.
+      </span>
     </div>
     <div class="title-section">
       <div class="controls">
@@ -531,15 +538,19 @@
   <div class="grid-container" id="color-grid-container">
   </div>
 
-  <dialog class="dialog" id="about-dialog">
-    <div class="dialog-header">
-      <h2 class="dialog-title">About CSS UniPalette</h2>
+  <dialog closedby="any" class="dialog" id="about-dialog">
+    <div class="dialog-header"><h2>CSS UniPalette</h2>
       <button class="close-btn" onclick="closeAboutDialog()">&times;</button>
     </div>
     <div class="dialog-content">
       <div class="about-content">
-        <p>This tool demonstrates CSS-only color palette generation using the new <strong>relative color syntax</strong>
-          with <code>oklch()</code> color space.</p>
+        <p>This tool demonstrates CSS-only <a
+            href="https://programmingdesignsystems.com/color/perceptually-uniform-color-spaces/"
+            target="_blank">perceptually uniform color palette</a> generation using the new <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/relative" target="_blank">css relative
+            color syntax</a>
+          with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch" target="_blank">oklch()</a>
+          color space.</p>
 
         <h3>How It Works</h3>
         <p>Each color variation is calculated from source colors using CSS custom properties and relative color
@@ -573,7 +584,7 @@
     </div>
   </dialog>
 
-  <dialog class="dialog" id="settings-dialog">
+  <dialog closedby="any" class="dialog" id="settings-dialog">
     <div class="dialog-header">
       <h2 class="dialog-title">Settings</h2>
       <button class="close-btn" onclick="closeSettingsDialog()">&times;</button>
@@ -657,7 +668,7 @@
     </div>
   </dialog>
 
-  <dialog class="dialog" id="export-dialog">
+  <dialog closedby="any" class="dialog" id="export-dialog">
     <div class="dialog-header">
       <h2 class="dialog-title">Export</h2>
       <button class="close-btn" onclick="closeExportDialog()">&times;</button>
@@ -1280,7 +1291,7 @@
     }
 
 
-    const colophon = `/*\n CSS UniPalette\n https://github.com/arniebradfo/\n*/\n`;
+    const colophon = `/*\n CSS UniPalette\n https://aipx-proto.github.io/css-uni-palette/\n*/\n`;
 
     // Export functions
     function generateCombinedCSS() {
