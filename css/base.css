@@ -1,0 +1,33 @@
+body,
+html {
+  --font-family-monospace: ui-monospace, menlo, monaco, consolas, monospace;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 12px;
+
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: oklch(from currentColor l 0 0 / 0.9);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+a:hover {
+  color: oklch(from currentColor l 0 0);
+} 

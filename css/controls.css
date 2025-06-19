@@ -1,0 +1,165 @@
+.export-btn {
+  padding: 6px 12px;
+  border: 1px solid oklch(from currentColor l 0 0 / 0.2);
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.export-btn:hover {
+  border-color: oklch(from currentColor l 0 0 / 0.4);
+  background: oklch(from currentColor l 0 0 / 0.05);
+}
+
+.color-input {
+  width: 24px;
+  height: 16px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+}
+
+.color-input::-webkit-color-swatch {
+  border: 1px solid hsl(from currentColor l 0 0 / 0.2);
+  border-radius: 2px;
+}
+
+.lightness-input {
+  width: 8ch;
+  height: 2em;
+  min-width: 0;
+  flex: 0 0 auto;
+  border-radius: 2px;
+  color: inherit;
+  background: transparent;
+  border: 1px solid oklch(from currentColor l 0 0 / 0.1);
+  padding-left: 8px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.lightness-input:focus {
+  border: 1px solid oklch(from currentColor l 0 0 / 0.6);
+  outline: none;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.close-btn:hover {
+  background: oklch(from currentColor l 0 0 / 0.1);
+}
+
+.css-section select,
+.css-section input[type="number"] {
+  padding: 8px 12px;
+  background: var(--app-background-color-input);
+  border: 1px solid oklch(from currentColor l 0 0 / 0.2);
+  border-radius: 4px;
+  color: inherit;
+  font-size: 13px;
+}
+
+.css-section select:focus,
+.css-section input[type="number"]:focus {
+  border-color: oklch(from currentColor l 0 0 / 0.4);
+  outline: none;
+}
+
+.css-section textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  background: var(--app-background-color-input);
+  border: 1px solid oklch(from currentColor l 0 0 / 0.2);
+  border-radius: 4px;
+  color: inherit;
+  font-family: var(--font-family-monospace);
+  font-size: 12px;
+  line-height: 1.4;
+  field-sizing: content;
+}
+
+.css-section textarea:focus {
+  border-color: oklch(from currentColor l 0 0 / 0.4);
+  outline: none;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.radio-option input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.radio-option:hover {
+  color: oklch(from currentColor l 0 0 / 0.8);
+}
+
+.control-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.control-group label {
+  font-weight: 600;
+  margin: 0;
+}
+
+.control-group input {
+  width: 80px;
+  height: 6px;
+  cursor: pointer;
+}
+
+.control-group span {
+  min-width: 24px;
+  text-align: center;
+}
+
+.visual-setting {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.visual-setting input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.visual-setting:hover {
+  color: oklch(from currentColor l 0 0 / 0.8);
+} 

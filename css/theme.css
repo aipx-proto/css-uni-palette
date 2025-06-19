@@ -1,0 +1,17 @@
+html {
+  --app-background-color: hsl(0, 0%, 2%);
+  --app-background-color-input: hsl(0, 0%, 0%);
+  --app-text-color: #d3d3d3;
+  color: var(--app-text-color);
+  background-color: var(--app-background-color);
+  color-scheme: dark;
+}
+
+html:has(.APPSETTING-light-theme) {
+  --app-background-color: hsl(0, 0%, 98%);
+  --app-background-color-input: hsl(0, 0%, 96%);
+  --app-text-color: #111;
+  color: var(--app-text-color);
+  background-color: var(--app-background-color);
+  color-scheme: light;
+} 

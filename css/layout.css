@@ -1,0 +1,67 @@
+.title-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  /* Use a semi-transparent background to let the blur show through */
+  background-color: oklch(from var(--app-background-color) l c h / 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--app-background-color);
+  z-index: 10;
+  flex: 0 0 auto;
+}
+
+.site-title {
+  flex: 1 1 auto;
+  min-width: 0; /* Allow the container to shrink */
+  min-width: 300px; /* Minimum width before wrapping */
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tagline {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Allow tagline to wrap when the entire header wraps */
+@media (max-width: 768px) {
+  .tagline {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+  
+  .site-title {
+    min-width: 200px;
+  }
+}
+
+.github-link {
+  opacity: 0.6;
+}
+
+.controls {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+} 

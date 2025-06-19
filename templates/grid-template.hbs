@@ -1,0 +1,40 @@
+<div class="color-grid" style="grid-template-columns: 1fr repeat({{shades.length}}, 1fr) 1fr">
+  <!-- Header row -->
+  <div class="header-cell" style="--l-shade: var(--l-0);">
+    <span>W</span>
+    <input type="number" class="lightness-input" data-shade="W" min="0" max="100" step="0.3" value="0" disabled>
+  </div>
+  {{#each shades}}
+  <div class="header-cell" style="--l-shade: var(--l-{{this}});">
+    <span>{{this}}</span>
+    <input type="number" class="lightness-input" data-shade="{{this}}" min="0" max="100" step="0.3" value="0">
+  </div>
+  {{/each}}
+  <div class="header-cell" style="--l-shade: var(--l-1000);"><span>B</span>
+    <input type="number" class="lightness-input" data-shade="B" min="0" max="100" step="0.3" value="100" disabled>
+  </div>
+
+  <!-- Color rows -->
+  {{#each colors}}
+  <div class="color-name" style="--swatch: white;" title="{{this}}-white">
+    <span>{{this}}</span>
+    <input type="color" class="color-input" data-color="{{this}}" value="#000000">
+  </div>
+  {{#each ../shades}}
+  <div class="color-cell" style="--swatch: var(--color-{{../this}}-{{this}});" title="{{../this}}-{{this}}">{{../this}}-{{this}}</div>
+  {{/each}}
+  <div class="color-cell" style="--swatch: black;" title="{{this}}-black">...</div>
+  {{/each}}
+
+  <!-- Gray rows -->
+  {{#each grays}}
+  <div class="color-name" style="--swatch: white;" title="{{this}}-white">
+    <span>{{this}}</span>
+    <input type="color" class="color-input" data-color="{{this}}" value="#000000">
+  </div>
+  {{#each ../shades}}
+  <div class="color-cell" style="--swatch: var(--color-{{../this}}-{{this}});" title="{{../this}}-{{this}}">{{../this}}-{{this}}</div>
+  {{/each}}
+  <div class="color-cell" style="--swatch: black;" title="{{this}}-black">...</div>
+  {{/each}}
+</div> 
