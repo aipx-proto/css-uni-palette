@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "index.html": "handlebars"
+  },
+  "emmet.includeLanguages": {
+    "handlebars": "html"
+  }
+} 
